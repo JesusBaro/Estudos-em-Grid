@@ -1,0 +1,12 @@
+
+main{
+    border: solid gray;
+
+}
+#CaixaGrid{
+    border: solid gray;
+    background-color: azure;
+}
+#CaixaGrid{
+    display: grid;
+}
