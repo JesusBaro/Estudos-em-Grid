@@ -1,12 +1,95 @@
-
-main{
-    border: solid gray;
-
+.box,.box2{
+    color: white;
+    border: solid gold;
+    
 }
 #CaixaGrid{
-    border: solid gray;
-    background-color: azure;
-}
-#CaixaGrid{
+    /* grid-template-columns:repeat(2,1fr); repetindo e indicando o tamanho */
+    /* "fr" frame? */
+    /* grid-template-columns: repeat(2, 1fr 2fr); */ /* esse caro indica quqe repete 5, o 1º tem 1fr de comprimento e o 2º tem 2fr */
+    background-color: rgba(175, 166, 166, 0.728);
+    border: solid  red;
+
+   width: 100vw;
     display: grid;
+    margin: 0 auto; /*centraliza no meio*/
+    grid-template-columns: 20%  18%  18%  18% ;
+    grid-template-rows:20% 20% 20% ;
+    grid-gap: 0.5rem;
+}
+.ReiAfro{
+
+    background-image: url("img/Rei-Afro.png");
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid rebeccapurple;
+
+    grid-column-start: 1;
+    grid-row: span 2;
+    grid-column: 1;
+
+}
+.Bey{
+    background-image: url("img/Beyonce.png");
+    background-size:90% ;
+    background-repeat: no-repeat;
+background-position: center;
+    border: solid red;
+    grid-column-start: 2;
+    grid-column: 2;
+   
+}
+.GraceJones{
+    border: solid teal;
+    grid-column-start: 3;
+    grid-row-end:span 2;
+    grid-column: 3;
+  
+}
+.ModeloVolume{
+    border: solid yellow;
+    grid-column-start: 4;
+    grid-column: 4;
+    grid-row:span 3;
+}
+.Nago{
+    border: solid yellowgreen;
+    grid-column-start: 5;
+    grid-column: 5;
+
+}
+.PanteraNegra{
+  
+    border: solid indianred;
+    grid-column: 2;
+}
+.ModeloRetinto{
+   
+    border: solid indigo;
+    grid-column-start: 5;
+    grid-column: 5;
+    grid-row-end:span 2;
+}
+.Gloria{
+   
+    border: solid olive;
+    grid-column-start: 1;
+    grid-template-rows: 3;
+    grid-column:1 ;
+    grid-row: 3;
+}
+.Thais{
+   
+    border: solid orange;
+    grid-column: 2;
+    grid-row:3;
+}
+.Snoopy{
+
+    border: solid orangered;
+    grid-column-start: 2;
+    grid-column: 3;
+    grid-row: 3;
 }
