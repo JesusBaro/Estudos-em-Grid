@@ -95,6 +95,7 @@ background-position: center;
 }
 /*  teste 2 ------------------------ */
 #ContainerGalery{
+ 
     display: grid;
     grid-template-columns: 0.3fr 0.2fr 0.2fr 0.3fr 0.2fr;
     grid-template-rows: 30vh 30vh 30vh;
@@ -105,6 +106,7 @@ background-position: center;
 justify-content: center;
 column-gap: 1.5vh;
 row-gap: 1.5vh;
+display: none;
 }
 .rei{
   
@@ -195,4 +197,61 @@ background-repeat: no-repeat;
     background-image: url("img/cabelo-snoopydog.png");
     background-size:cover;
     background-repeat: no-repeat;
+}
+/* teste media */
+@media (min-width:201px) and (max-width:500px){
+#MobileContainerGalery{
+    border: solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250fr 300fr 400fr 300fr 100fr;
+   grid-template-areas: 
+   "MobRei MobRei MobBeyonce MobPantera"
+   "MobRei MobRei MobThaisA MobThaisA"
+   "MobGloriaM MobGloriaM MobGloriaM MobGloriaM"
+   "MobVolume MobRetinto MobGrace MobGrace"
+   "MobNagoHair MobSnoopyD MobGrace MobGrace";
+   grid-gap: 2vh;
+
+}
+.MobRei{
+    border: solid seagreen;
+    grid-area:MobRei ;
+}
+.MobBeyonce{
+    border: solid seagreen;
+    grid-area:MobBeyonce ;
+}
+.MobGrace{
+    border: solid seagreen;
+    grid-area:MobGrace ;
+}
+.MobVolume{
+    border: solid seagreen;
+    grid-area:MobVolume ;
+}
+.MobNagoHair{
+    border: solid seagreen;
+grid-area: MobNagoHair;
+}
+.MobPantera{
+    border: solid seagreen;
+    grid-area: MobPantera;
+}
+.MobRetinto{
+    border: solid seagreen;
+    grid-area: MobRetinto;
+}
+.MobGloriaM{
+    border: solid seagreen;
+    grid-area: MobGloriaM;
+}
+.MobThaisA{
+    border: solid seagreen;
+    grid-area: MobThaisA;
+}
+.MobSnoopyD{
+    border: solid seagreen;
+    grid-area: MobSnoopyD;
+}
 }
