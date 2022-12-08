@@ -200,58 +200,101 @@ background-repeat: no-repeat;
 }
 /* teste media */
 @media (min-width:201px) and (max-width:500px){
+
+    /* MOBILE GALERY */
 #MobileContainerGalery{
     border: solid red;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 250fr 300fr 400fr 300fr 100fr;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    grid-template-rows: 30vw  50vw 50vw 50vw 30vw;
    grid-template-areas: 
    "MobRei MobRei MobBeyonce MobPantera"
    "MobRei MobRei MobThaisA MobThaisA"
    "MobGloriaM MobGloriaM MobGloriaM MobGloriaM"
    "MobVolume MobRetinto MobGrace MobGrace"
    "MobNagoHair MobSnoopyD MobGrace MobGrace";
-   grid-gap: 2vh;
+   grid-gap: 1vh;
 
 }
 .MobRei{
     border: solid seagreen;
     grid-area:MobRei ;
+    background-image: url("img/Rei-Afro.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .MobBeyonce{
     border: solid seagreen;
     grid-area:MobBeyonce ;
+    background-image: url("img/Beyonce.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .MobGrace{
     border: solid seagreen;
     grid-area:MobGrace ;
+    background-image: url("img/grace-jones.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .MobVolume{
     border: solid seagreen;
     grid-area:MobVolume ;
+    background-image: url("img/Modelo-cabelo-volumoso.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .MobNagoHair{
     border: solid seagreen;
 grid-area: MobNagoHair;
+background-image: url("img/modelo-nago.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 }
 .MobPantera{
     border: solid seagreen;
     grid-area: MobPantera;
+    background-image: url("img/Pantera-Negra.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .MobRetinto{
     border: solid seagreen;
     grid-area: MobRetinto;
+    background-image: url("img/Modelo-retinto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .MobGloriaM{
     border: solid seagreen;
     grid-area: MobGloriaM;
+    background-image: url("img/gloriamaria.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .MobThaisA{
     border: solid seagreen;
     grid-area: MobThaisA;
+    background-image: url("img/Thais-Araujo.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+      background-position: center;
 }
 .MobSnoopyD{
     border: solid seagreen;
     grid-area: MobSnoopyD;
+    background-image: url("img/cabelo-snoopydog.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 }
